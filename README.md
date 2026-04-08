@@ -55,6 +55,16 @@
 
 ---
 
+### ⭐ `amazon_predictor.py` — Amazon 評論評分預測
+- 使用 **RoBERTa** (roberta-base) 進行 5 星評分分類
+- 結合評論標題與內文作為輸入，使用 AdamW + linear warmup scheduler 訓練
+- 完整實作資料前處理、class weight 計算、訓練迴圈、模型儲存
+- 輸出 Confusion Matrix、Accuracy 曲線、Loss 曲線視覺化
+
+`Python` `PyTorch` `RoBERTa` `HuggingFace` `NLP` `Google Colab`
+
+---
+
 ### 📧 `validEmailAddress_2.py` — Email 地址分類器
 - 自行設計 10 維 feature vector，識別合法 Email 地址
 - 處理引號、連續點、特殊字元等邊界情況
@@ -66,7 +76,7 @@
 ## 🛠️ 環境需求
 
 ```bash
-pip install numpy pandas scikit-learn xgboost
+pip install numpy pandas scikit-learn xgboost torch transformers datasets
 ```
 
 ---
